@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Panier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛍️ Mon Panier</h1>
+  </header>
+
+  <main class="cart">
+    <!-- Produit 1 -->
+    <div class="cart-item">
+      <img src="tshirt.jpg" alt="T-shirt">
+      <div class="details">
+        <span class="item-name">T-shirt coton</span>
+        <span class="item-price">20€</span>
+        <div class="controls">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="heart">♥</button>
+        <button class="delete">🗑️</button>
+      </div>
+    </div>
+
+    <!-- Produit 2 -->
+    <div class="cart-item">
+      <img src="sneakers.jpg" alt="Sneakers">
+      <div class="details">
+        <span class="item-name">Sneakers</span>
+        <span class="item-price">50€</span>
+        <div class="controls">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="heart">♥</button>
+        <button class="delete">🗑️</button>
+      </div>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="cart-item">
+      <img src="sacados.jpg" alt="Sac à dos">
+      <div class="details">
+        <span class="item-name">Sac à dos</span>
+        <span class="item-price">35€</span>
+        <div class="controls">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="heart">♥</button>
+        <button class="delete">🗑️</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h2>Total : <span id="total-price">0 €</span></h2>
+  </footer>
+
+  <!-- Section commande -->
+  <section class="checkout">
+    <h2>Finaliser la commande</h2>
+    <form id="checkout-form">
+      <label>Nom complet :</label>
+      <input type="text" id="name" required>
+
+      <label>Email :</label>
+      <input type="email" id="email" required>
+
+      <label>Adresse de livraison :</label>
+      <textarea id="address" required></textarea>
+
+      <label>Mode de paiement :</label>
+      <select id="payment" required>
+        <option value="">-- Choisir --</option>
+        <option value="carte">Carte bancaire</option>
+        <option value="paypal">PayPal</option>
+        <option value="livraison">Paiement à la livraison</option>
+      </select>
+
+      <button type="submit" class="confirm">Passer commande</button>
+    </form>
+
+    <p id="confirmation-message" style="display:none; color:green; font-weight:bold;">
+      ✅ Merci ! Votre commande a été enregistrée.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

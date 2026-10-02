@@ -1,0 +1,141 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.cart {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.cart-item img {
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.details {
+  flex: 1;
+  margin-left: 20px;
+  min-width: 200px;
+}
+
+.item-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.item-price {
+  color: #555;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.plus, .minus {
+  background: #007bff;
+  color: white;
+}
+
+.delete {
+  background: #dc3545;
+  color: white;
+}
+
+.heart {
+  background: none;
+  font-size: 22px;
+  color: grey;
+}
+
+.heart.liked {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #fff;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Section commande */
+.checkout {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.checkout h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.checkout form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout input, .checkout textarea, .checkout select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.confirm {
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm:hover {
+  background: #218838;
+}
